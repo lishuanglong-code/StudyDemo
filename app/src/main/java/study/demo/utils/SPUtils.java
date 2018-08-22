@@ -1,4 +1,4 @@
-package study.demo.sp;
+package study.demo.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
