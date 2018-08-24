@@ -17,16 +17,28 @@
             android:orientation="vertical">
 
             <android.support.v7.widget.AppCompatButton
-                android:text="SP_AVTIVITY"
                 android:id="@+id/spAvtivity"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="SP_AVTIVITY"/>
 
             <android.support.v7.widget.AppCompatButton
-                android:text="SCREEN_ADAPTIVE_AVTIVITY"
                 android:id="@+id/screenAdaptiveAvtivity"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="SCREEN_ADAPTIVE_AVTIVITY"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/annotationActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ANNOTATION_ACTIVITY"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/permissionActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PERMISSION_ACTIVITY"/>
 
         </LinearLayout>
     </ScrollView>

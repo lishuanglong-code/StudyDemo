@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="study.demo">
 
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -21,6 +24,10 @@
         <activity android:name=".activity.SPActivity"/>
 
         <activity android:name=".activity.ScreenAdaptiveAvtivity"/>
+
+        <activity android:name=".activity.AnnotationActivity"/>
+
+        <activity android:name=".activity.PermissionActivity"/>
 
 
 
