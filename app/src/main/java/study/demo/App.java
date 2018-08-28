@@ -5,7 +5,7 @@ import android.content.Context;
 
 public class App extends Application {
 
-    private static Context context = null;
+    public static Context context = null;
     private static App app = null;
 
     @Override
