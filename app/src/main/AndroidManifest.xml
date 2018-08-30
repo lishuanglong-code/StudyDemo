@@ -31,6 +31,8 @@
 
         <activity android:name=".activity.PermissionActivity"/>
 
+        <activity android:name=".activity.PermissionChildActivity"/>
+
 
 
 

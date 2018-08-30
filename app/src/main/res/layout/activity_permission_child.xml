@@ -4,13 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <FrameLayout
-        android:id="@+id/fl_context"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:id="@+id/btn_intent"
+    <TextView
+        android:textColor="@android:color/black"
+        android:text="12151"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

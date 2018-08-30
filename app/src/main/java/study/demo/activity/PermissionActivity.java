@@ -1,11 +1,13 @@
 package study.demo.activity;
 
 import android.Manifest;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
 import java.util.List;
@@ -33,10 +35,17 @@ public class PermissionActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_permission);
+
+        findViewById(R.id.btn_intent).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PermissionActivity.this,PermissionChildActivity.class));
+            }
+        });
         /**
          * 第二步请求
          * */
-        PermissionUtils.requestPermissions(PermissionActivity.this, requestCode, permission);
+//        PermissionUtils.requestPermissions(PermissionActivity.this, requestCode, permission);
 
 
         /*fragment 使用*/
@@ -50,10 +59,13 @@ public class PermissionActivity extends AppCompatActivity {
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+
+        Log.d(TAG,"PermissionActivity --> onRequestPermissionsResult");
+
         /**
          * 第三步接收
          * */
-        PermissionUtils.onRequestPermissionsResult(PermissionActivity.this, requestCode, permissions, grantResults);
+//        PermissionUtils.onRequestPermissionsResult(PermissionActivity.this, requestCode, permissions, grantResults);
     }
 
 
