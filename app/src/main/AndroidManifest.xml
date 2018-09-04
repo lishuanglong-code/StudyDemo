@@ -33,6 +33,8 @@
 
         <activity android:name=".activity.PermissionChildActivity"/>
 
+        <activity android:name=".activity.RxJavaActivity"/>
+
 
 
 

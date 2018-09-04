@@ -40,6 +40,12 @@
                 android:layout_height="wrap_content"
                 android:text="PERMISSION_ACTIVITY"/>
 
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/rxjavaActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RXJAVA_ACTIVITY"/>
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

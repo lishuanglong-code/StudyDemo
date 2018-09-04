@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.screenAdaptiveAvtivity).setOnClickListener(this);
         findViewById(R.id.annotationActivity).setOnClickListener(this);
         findViewById(R.id.permissionActivity).setOnClickListener(this);
+        findViewById(R.id.rxjavaActivity).setOnClickListener(this);
     }
 
     @Override
@@ -38,6 +39,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.permissionActivity:
                 startActivity(new Intent(MainActivity.this, PermissionActivity.class));
+                break;
+            case R.id.rxjavaActivity:
+                startActivity(new Intent(MainActivity.this, RxJavaActivity.class));
                 break;
         }
     }

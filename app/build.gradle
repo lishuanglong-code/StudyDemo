@@ -42,4 +42,7 @@ dependencies {
     implementation project(':AnnotationLib')
     implementation project(':ApiLib')
     annotationProcessor project(':ProcessorLib')
+
+    //Rxjava 2.0
+    implementation "io.reactivex.rxjava2:rxjava:2.2.1"
 }
