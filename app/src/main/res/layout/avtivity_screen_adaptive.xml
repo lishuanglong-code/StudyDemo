@@ -5,49 +5,9 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
-
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:background="@android:color/black"
-        android:textColor="@android:color/white"/>
-
-    <TextView
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="3.3dp"
-        android:background="@android:color/black"
-        android:textColor="@android:color/white"/>
-
-    <TextView
-        android:layout_marginLeft="3.3dp"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:background="@android:color/black"
-        android:textColor="@android:color/white"/>
-
-    <TextView
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="3.3dp"
-        android:background="@android:color/black"
-        android:textColor="@android:color/white"/>
-
-    <TextView
-        android:layout_marginLeft="3.3dp"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:background="@android:color/black"
-        android:textColor="@android:color/white"/>
-
-    <TextView
-        android:layout_width="95dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="3.3dp"
-        android:background="@android:color/black"
-        android:textColor="@android:color/white"/>
-
-
-
+        android:text="0000000000000000000000000000000000000001"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

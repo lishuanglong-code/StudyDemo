@@ -21,7 +21,7 @@ public class ScreenAdaptiveAvtivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //改变系统密度
-        ScreenAdaptiveUtils.screenAdaptiveWidth(ScreenAdaptiveAvtivity.this, App.getContext(),360);
+        ScreenAdaptiveUtils.screenAdaptiveWidth(ScreenAdaptiveAvtivity.this, App.getContext(),320);
         setContentView(R.layout.avtivity_screen_adaptive);
         //Activity
         DisplayMetrics displayMetrics01 = ScreenAdaptiveAvtivity.this.getResources().getDisplayMetrics();
