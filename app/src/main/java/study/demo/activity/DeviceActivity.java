@@ -1,5 +1,6 @@
 package study.demo.activity;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.annotation.Nullable;
@@ -18,6 +19,13 @@ public class DeviceActivity extends AppCompatActivity {
 
         String string = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
         Log.d(TAG,"ANDROID_ID02 --> " + ANDROID_ID);
+
+        String model = Build.MODEL;
+        if (model != null)
+            model = model.trim().replaceAll("\\s*", "");
+
+        Log.d(TAG,"MODEL --> " + model);
+
     }
 
 
