@@ -7,9 +7,9 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-public class DeviceActivity extends AppCompatActivity {
+public class SimpleTestActivity extends AppCompatActivity {
 
-    public static final String TAG = "Device_Activity";
+    public static final String TAG = "Simple_Test_Activity";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -27,7 +27,4 @@ public class DeviceActivity extends AppCompatActivity {
         Log.d(TAG,"MODEL --> " + model);
 
     }
-
-
-
 }

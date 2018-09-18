@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.annotationActivity).setOnClickListener(this);
         findViewById(R.id.permissionActivity).setOnClickListener(this);
         findViewById(R.id.rxjavaActivity).setOnClickListener(this);
-        findViewById(R.id.deviceActivity).setOnClickListener(this);
+        findViewById(R.id.simpleTestActivity).setOnClickListener(this);
+        findViewById(R.id.constraintLayoutActivity).setOnClickListener(this);
     }
 
     @Override
@@ -44,8 +45,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.rxjavaActivity:
                 startActivity(new Intent(MainActivity.this, RxJavaActivity.class));
                 break;
-            case R.id.deviceActivity:
-                startActivity(new Intent(MainActivity.this, DeviceActivity.class));
+            case R.id.simpleTestActivity:
+                startActivity(new Intent(MainActivity.this, SimpleTestActivity.class));
+                break;
+            case R.id.constraintLayoutActivity:
+                startActivity(new Intent(MainActivity.this, ConstraintLayoutActivity.class));
                 break;
         }
     }

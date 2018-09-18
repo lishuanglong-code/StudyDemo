@@ -47,10 +47,16 @@
                 android:text="RXJAVA_ACTIVITY"/>
 
             <android.support.v7.widget.AppCompatButton
-                android:id="@+id/deviceActivity"
+                android:id="@+id/simpleTestActivity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="DEVICE_ACTIVITY"/>
+                android:text="Simple_Test_Activity"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/constraintLayoutActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Constraint_Layout_Activity"/>
 
         </LinearLayout>
     </ScrollView>
