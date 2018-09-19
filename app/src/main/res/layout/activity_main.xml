@@ -58,6 +58,12 @@
                 android:layout_height="wrap_content"
                 android:text="Constraint_Layout_Activity"/>
 
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/cameraActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Camera_Activity"/>
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

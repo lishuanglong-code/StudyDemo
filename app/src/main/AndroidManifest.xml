@@ -39,6 +39,10 @@
 
         <activity android:name=".activity.ConstraintLayoutActivity"/>
 
+        <activity android:name=".activity.CameraActivity"/>
+
+        <activity android:name=".activity.ShowPictureActivity"/>
+
 
 
 
