@@ -205,7 +205,7 @@ public class CameraActivity extends AppCompatActivity {
         public void onOpened(@NonNull CameraDevice camera) {
             CameraActivity.this.camera = camera;
             try {
-                surfaces.setDefaultBufferSize(mOutputSizes[0].getWidth(), mOutputSizes[0].getHeight());
+                surfaces.setDefaultBufferSize(mLargest.getWidth(), mLargest.getHeight());
                 List<Surface> surfaceList = new ArrayList<>();
                 Surface surface = new Surface(surfaces);
                 surfaceList.add(surface);
@@ -409,7 +409,7 @@ public class CameraActivity extends AppCompatActivity {
             return false;
         } else {
             mLargest = Collections.max(Arrays.asList(map.getOutputSizes(ImageFormat.JPEG)), new CompareSizesByArea());
-            mOutputSizes = map.getOutputSizes(SurfaceTexture.class);
+//            mOutputSizes = map.getOutputSizes(SurfaceTexture.class);
         }
 
         //获取传感器的方向
