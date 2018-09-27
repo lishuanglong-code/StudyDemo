@@ -64,6 +64,12 @@
                 android:layout_height="wrap_content"
                 android:text="Camera_Activity"/>
 
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/testFragmentLifeActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Test_Fragment_Life_Activity"/>
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

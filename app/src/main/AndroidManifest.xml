@@ -43,6 +43,8 @@
 
         <activity android:name=".activity.ShowPictureActivity"/>
 
+        <activity android:name=".activity.TestFragmentLifeActivity"/>
+
 
 
 
