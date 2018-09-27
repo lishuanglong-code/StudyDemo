@@ -17,7 +17,7 @@ public class TestFragmentLifeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_fragment_life);
 
-
+        //test
         FragmentManager supportFragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = supportFragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.fl_context,new TestFragmentLife(),"TestFragmentLife01");
