@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.constraintLayoutActivity).setOnClickListener(this);
         findViewById(R.id.cameraActivity).setOnClickListener(this);
         findViewById(R.id.testFragmentLifeActivity).setOnClickListener(this);
+        findViewById(R.id.serviceActivity).setOnClickListener(this);
     }
 
     @Override
@@ -56,8 +57,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.cameraActivity:
                 startActivity(new Intent(MainActivity.this, CameraActivity.class));
                 break;
-                case R.id.testFragmentLifeActivity:
+            case R.id.testFragmentLifeActivity:
                 startActivity(new Intent(MainActivity.this, TestFragmentLifeActivity.class));
+                break;
+            case R.id.serviceActivity:
+                startActivity(new Intent(MainActivity.this, ServiceActivity.class));
                 break;
         }
     }

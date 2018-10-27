@@ -45,6 +45,12 @@
 
         <activity android:name=".activity.TestFragmentLifeActivity"/>
 
+        <activity android:name=".activity.ServiceActivity"/>
+
+
+        <!-- service-->
+        <service android:name="study.demo.service.MyService"/>
+
 
 
 
