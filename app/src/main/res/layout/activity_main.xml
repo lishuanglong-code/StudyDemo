@@ -76,6 +76,12 @@
                 android:layout_height="wrap_content"
                 android:text="Service_Activity"/>
 
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/regexActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="正则表达式"/>
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

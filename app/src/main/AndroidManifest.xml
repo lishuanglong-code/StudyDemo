@@ -47,6 +47,9 @@
 
         <activity android:name=".activity.ServiceActivity"/>
 
+        <!--正则表达式的 Activity-->
+        <activity android:name=".activity.RegexActivity"/>
+
 
         <!-- service-->
         <service android:name="study.demo.service.MyService"/>

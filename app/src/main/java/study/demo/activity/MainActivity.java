@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.cameraActivity).setOnClickListener(this);
         findViewById(R.id.testFragmentLifeActivity).setOnClickListener(this);
         findViewById(R.id.serviceActivity).setOnClickListener(this);
+        findViewById(R.id.regexActivity).setOnClickListener(this);
     }
 
     @Override
@@ -62,6 +63,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.serviceActivity:
                 startActivity(new Intent(MainActivity.this, ServiceActivity.class));
+                break;
+            case R.id.regexActivity:
+                /*正则表达式*/
+                startActivity(new Intent(MainActivity.this, RegexActivity.class));
                 break;
         }
     }
