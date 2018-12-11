@@ -1,13 +1,23 @@
-package study.demo.activity;
+package study.demo;
 
 import android.content.Intent;
-import android.os.Handler;
-import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import study.demo.R;
+import study.demo.activity.AnnotationActivity;
+import study.demo.activity.CameraActivity;
+import study.demo.activity.ConstraintLayoutActivity;
+import study.demo.activity.PermissionActivity;
+import study.demo.activity.RegexActivity;
+import study.demo.activity.RxJavaActivity;
+import study.demo.activity.SPActivity;
+import study.demo.activity.ScreenAdaptiveAvtivity;
+import study.demo.activity.ServiceActivity;
+import study.demo.activity.SimpleTestActivity;
+import study.demo.activity.TestFragmentLifeActivity;
+import study.demo.activity.jetpack.lifecycle.LifecycleActivity;
+import study.demo.activity.jetpack.livedata.LiveDataActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -18,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         findViewById(R.id.spAvtivity).setOnClickListener(this);
         findViewById(R.id.screenAdaptiveAvtivity).setOnClickListener(this);
         findViewById(R.id.annotationActivity).setOnClickListener(this);
@@ -29,6 +40,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.testFragmentLifeActivity).setOnClickListener(this);
         findViewById(R.id.serviceActivity).setOnClickListener(this);
         findViewById(R.id.regexActivity).setOnClickListener(this);
+
+        /*android 建构组件*/
+        findViewById(R.id.lifecyclesActivity).setOnClickListener(this);
+        findViewById(R.id.liveDataActivity).setOnClickListener(this);
     }
 
     @Override
@@ -64,9 +79,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.serviceActivity:
                 startActivity(new Intent(MainActivity.this, ServiceActivity.class));
                 break;
+            /*正则表达式*/
             case R.id.regexActivity:
-                /*正则表达式*/
                 startActivity(new Intent(MainActivity.this, RegexActivity.class));
+                break;
+            /*android 建构组件*/
+            case R.id.lifecyclesActivity:
+                startActivity(new Intent(MainActivity.this, LifecycleActivity.class));
+                break;
+            case R.id.liveDataActivity:
+                startActivity(new Intent(MainActivity.this, LiveDataActivity.class));
                 break;
         }
     }

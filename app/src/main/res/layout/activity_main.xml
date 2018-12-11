@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.MainActivity">
+    tools:context=".MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -80,7 +80,31 @@
                 android:id="@+id/regexActivity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="正则表达式"/>
+                android:text="Regex"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="*** 以下 Android 架构组件 ***"
+                android:textSize="18dp"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/lifecyclesActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lifecycles"
+                android:textAllCaps="false"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/liveDataActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LiveData"
+                android:textAllCaps="false"/>
 
         </LinearLayout>
     </ScrollView>

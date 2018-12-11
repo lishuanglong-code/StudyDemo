@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -49,6 +49,9 @@
 
         <!--正则表达式的 Activity-->
         <activity android:name=".activity.RegexActivity"/>
+        <!--android 框架-->
+        <activity android:name=".activity.jetpack.lifecycle.LifecycleActivity"/>
+        <activity android:name=".activity.jetpack.livedata.LiveDataActivity"/>
 
 
         <!-- service-->
