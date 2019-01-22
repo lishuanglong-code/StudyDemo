@@ -32,7 +32,6 @@ import java.util.regex.Pattern;
  * {n} : n 是一个非负整数。匹配确定的 n 次。例如，'o{2}' 不能匹配 "Bob" 中的 'o'，但是能匹配 "food" 中的两个 o。
  * {n,} : n 是一个非负整数。至少匹配n 次。例如，'o{2,}' 不能匹配 "Bob" 中的 'o'，但能匹配 "foooood" 中的所有 o。'o{1,}' 等价于 'o+'。'o{0,}' 则等价于 'o*'。
  * {n,m} : m 和 n 均为非负整数，其中n <= m。最少匹配 n 次且最多匹配 m 次。例如，"o{1,3}" 将匹配 "fooooood" 中的前三个 o。'o{0,1}' 等价于 'o?'。请注意在逗号和两个数之间不能有空格。
- *
  */
 public class RegexActivity extends AppCompatActivity {
 
@@ -99,15 +98,29 @@ public class RegexActivity extends AppCompatActivity {
         inputList.add(input19);
         inputList.add(input20);
 
-        Pattern compile = Pattern.compile(regex3);
-        for (int i = 0; i < inputList.size(); i++) {
-            Matcher matcher = compile.matcher(inputList.get(i));
-            boolean isMatches = matcher.matches();
-            if (isMatches){
-                Log.d(TAG, "匹配结果：" + isMatches + " ，匹配的内容：" + inputList.get(i) + "\n");
+//        Pattern compile = Pattern.compile(regex3);
+//        for (int i = 0; i < inputList.size(); i++) {
+//            Matcher matcher = compile.matcher(inputList.get(i));
+//            boolean isMatches = matcher.matches();
+//            if (isMatches){
+//                Log.d(TAG, "匹配结果：" + isMatches + " ，匹配的内容：" + inputList.get(i) + "\n");
+//            }
+//        }
+
+
+        String input21 = "00001-01061808100(00001-01/003)";
+        String substring = input21.substring(27, 30);
+        int count = 0;
+        try {
+            int num = Integer.parseInt(substring);
+            Log.d(TAG, "substring --> " + substring + "Integer.parseInt -->" + num);
+            while (num > 0) {
+                num = num / 10;
+                count++;
             }
+            Log.d(TAG, "输入的是" + count + "位数");
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
         }
-
-
     }
 }
