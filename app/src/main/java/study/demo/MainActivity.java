@@ -27,6 +27,8 @@ import study.demo.activity.fragments.FragmentFactoryModel;
 import study.demo.activity.fragments.FragmentListActivity;
 import study.demo.activity.jetpack.lifecycle.LifecycleActivity;
 import study.demo.activity.jetpack.livedata.LiveDataActivity;
+import study.demo.retrofit.example.RetrofitExample;
+import study.demo.view.event.dispatch.EventDispatch;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -49,6 +51,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.testFragmentLifeActivity).setOnClickListener(this);
         findViewById(R.id.serviceActivity).setOnClickListener(this);
         findViewById(R.id.regexActivity).setOnClickListener(this);
+        findViewById(R.id.eventDispatchActivity).setOnClickListener(this);
+        findViewById(R.id.retrofitExampleActivity).setOnClickListener(this);
 
         /*android 建构组件*/
         findViewById(R.id.lifecyclesActivity).setOnClickListener(this);
@@ -110,6 +114,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             /*fragment list activity*/
             case R.id.fragmentListActivity:
                 startActivity(new Intent(MainActivity.this, FragmentListActivity.class));
+                break;
+            /*event Dispatch Activity*/
+            case R.id.eventDispatchActivity:
+                startActivity(new Intent(MainActivity.this, EventDispatch.class));
+                break;
+            /*retrofit Example Activity*/
+            case R.id.retrofitExampleActivity:
+                startActivity(new Intent(MainActivity.this, RetrofitExample.class));
                 break;
         }
     }

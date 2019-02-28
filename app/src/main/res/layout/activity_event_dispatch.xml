@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<study.demo.view.event.dispatch.MyConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <study.demo.view.event.dispatch.MyButton
+        android:id="@+id/btn_test_01"
+        android:text="test 01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</study.demo.view.event.dispatch.MyConstraintLayout>

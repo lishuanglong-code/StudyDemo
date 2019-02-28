@@ -83,6 +83,20 @@
                 android:text="Regex"
                 android:textAllCaps="false"/>
 
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/eventDispatchActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Dispatch"
+                android:textAllCaps="false"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/retrofitExampleActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Retrofit Example"
+                android:textAllCaps="false"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
